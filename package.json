@@ -11,6 +11,7 @@
     "start": "node ./dist/index.js",
     "start:dev": "NODE_ENV=development ts-node-dev src/index.ts",
     "test": "jest --forceExit --detectOpenHandles --coverage",
+    "sonar": "sonarqube-verify",
     "start-local-sonarqube": "docker-compose -f docker-compose.sonar.yml up -d",
     "stop-local-sonarqube": "docker-compose -f docker-compose.sonar.yml down"
   },

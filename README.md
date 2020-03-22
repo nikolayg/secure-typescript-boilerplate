@@ -1,36 +1,37 @@
-# React Redux Starter Project
+# TypeScript Static Analysis Demo
 
-This boilerplate configures and demonstrates how to create a simple Express JS API server.
+This boilerplate demonstrates how to configure
+static source code analysis for a TypeScript project.
 
-To start:
-
-```bash
-# Installs the Node version defined in .nvmrc
-nvm install && npm install
-
-# Runs the app in a hot-swapping mode
-npm run start-dev
-```
-
-To run the tests:
+Supported commands:
 
 ```bash
-npm run test
-```
+# Runs jest tests
+npm test
 
-## For blog
+# Compiles the code
+npm run build
 
-```bash
-# Or yarn add --dev eslint-plugin-sonarjs
-npm install --save-dev eslint-plugin-sonarjs
-```
+# Runs ESLint analysis
+npm run lint
 
-```bash
-# Or use yarn
-npm install --save-dev sonarqube-scanner sonarqube-verify jest-sonar-reporter
-```
+# Automatically fixes ESLint violations
+npm run lint-fix
 
-```bash
-# Or use yarn
-npm install --save-dev audit-ci
+# Checks for known dependency vulnerabilities
+npm run audit-dependencies
+
+# Start local SonarQube (requires docker)
+# need to wait 1-2mins to start
+# Visit http://localhost:9000. Use admin/admin to login
+npm rum start-local-sonarqube
+
+# Stops the local SonarQube
+npm rum sop-local-sonarqube
+
+# Run SonarQube analysis on a local instance (must be started)
+npm run sonar
+
+# Run analysis on a remote SonarQube
+SONAR_SERVER="..." SONAR_TOKEN="..." npm run sonar
 ```
