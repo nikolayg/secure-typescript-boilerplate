@@ -1,0 +1,9 @@
+{
+  "high": true,
+  "package-manager": "auto",
+  "report-type": "summary",
+  "path-whitelist": [
+    "1217|sonarqube-scanner>download>decompress",
+    "1217|sonarqube-verify>sonarqube-scanner>download>decompress"
+  ]
+}

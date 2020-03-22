@@ -1,0 +1,22 @@
+{
+  // Place your settings in this file to overwrite default and user settings.
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "http.proxyStrictSSL": false,
+  "editor.formatOnSave": true,
+  "eslint.options": {
+    "configFile": ".eslintrc.js"
+  },
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}

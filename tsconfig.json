@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "strict": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "lib": [
+      "es2017",
+      "esnext"
+    ],
+    "importHelpers": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
