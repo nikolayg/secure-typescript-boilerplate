@@ -6,11 +6,11 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "audit-dependencies": "audit-ci --config audit-ci.json",
-    "lint": "eslint './src/**/*.{ts,js}'",
+    "lint": "eslint './src/**/*.{tsx,ts}'",
     "lint-fix": "eslint './src/**/*.ts' --fix",
     "start": "node ./dist/index.js",
     "start:dev": "NODE_ENV=development ts-node-dev src/index.ts",
-    "test": "NODE_ENV=development jest --forceExit --runInBand --detectOpenHandles --coverage",
+    "test": "jest --forceExit --detectOpenHandles --coverage",
     "start-local-sonarqube": "docker-compose -f docker-compose.sonar.yml up -d",
     "stop-local-sonarqube": "docker-compose -f docker-compose.sonar.yml down"
   },

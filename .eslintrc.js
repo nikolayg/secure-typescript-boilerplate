@@ -4,7 +4,6 @@ module.exports = {
     project: './tsconfig.json',
     jsx: false
   },
-  plugins: ['@typescript-eslint', 'sonarjs'],
   rules: {
     'max-len': [
       'error',
@@ -29,8 +28,9 @@ module.exports = {
   },
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'prettier',
+    // Disable ESLint rules that would conflict with prettier
     'prettier/@typescript-eslint',
+    'prettier',
     'plugin:prettier/recommended',
     'plugin:sonarjs/recommended'
   ]
