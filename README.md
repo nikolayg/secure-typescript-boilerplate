@@ -3,6 +3,8 @@
 This boilerplate demonstrates how to configure
 static source code analysis for a TypeScript project.
 
+This repository demonstrates the static analysis approaches described in [this post](https://nikgrozev.com/2020/03/22/improve-your-typescript-with-static-analysis/).
+
 Supported commands:
 
 ```bash
